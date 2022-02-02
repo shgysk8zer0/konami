@@ -34,7 +34,7 @@
 - [Example](#example)
 - [Requirements](#requirements)
 - [Supported Browsers](#supported-browsers)
-- [Issues](https://github.com/shgysk8zer0/issues)
+- [Issues](https://github.com/shgysk8zer0/konami/issues)
 - [Contributing](./.github/CONTRIBUTING.md)
 
 ### About
