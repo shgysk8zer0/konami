@@ -1,0 +1,39 @@
+{
+  "name": "konami",
+  "version": "1.0.0",
+  "description": "A simple JavaScript module for adding Konami Code Easter Eggs",
+  "main": "konami.js",
+  "type": "module",
+  "engines": {
+    "node": ">=15.3.0"
+  },
+  "scripts": {
+    "test": "eslint .",
+    "preversion": "npm test",
+    "version:bump": "npm run version:bump:patch",
+    "version:bump:patch": "npm version --no-git-tag-version patch",
+    "version:bump:minor": "npm version --no-git-tag-version minor",
+    "version:bump:major": "npm version --no-git-tag-version patch",
+    "fix:js": "eslint --fix .",
+    "fix": "npm run fix:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shgysk8zer0/konami.git"
+  },
+  "keywords": [
+    "konami",
+    "konami-js",
+    "easter-egg"
+  ],
+  "author": "Chris Zuber <admin@kernvalley.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shgysk8zer0/konami/issues"
+  },
+  "homepage": "https://github.com/shgysk8zer0/konami#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0"
+  },
+  "dependencies": {}
+}

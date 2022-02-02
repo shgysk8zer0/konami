@@ -1,0 +1,22 @@
+---
+name: Node CI
+on:
+  push:
+    branches:
+      - master
+      - release/*
+  pull_request:
+    branches:
+      - master
+      - release/*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - uses: actions/setup-node@v2.5.1
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test

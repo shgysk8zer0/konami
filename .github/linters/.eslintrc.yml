@@ -1,0 +1,65 @@
+---
+---
+#############################
+#############################
+## JavaScript Linter rules ##
+#############################
+#############################
+
+extends: eslint:recommended
+
+############
+# Env Vars #
+############
+env:
+  browser: true
+  es6: true
+
+###############
+# Global Vars #
+###############
+globals:
+  URLSearchParams: false
+  ga: false
+  skipWaiting: false
+  clients: false
+  PasswordCredential: false
+
+###############
+# Parser vars #
+###############
+parser: babel-eslint
+parserOptions:
+  sourceType: module
+  ecmaVersion: 2018
+
+###########
+# Plugins #
+###########
+plugins:
+  - async-await
+
+#########
+# Rules #
+#########
+rules:
+  indent:
+  - 2
+  - tab
+  quotes:
+  - 2
+  - single
+  semi:
+  - 2
+  - always
+  no-console: 0
+  async-await/space-after-async: 2
+  async-await/space-after-await: 2
+  generator-star-spacing:
+  - error
+  - before: false
+    after: true
+    anonymous: neither
+    method:
+      before: true
+      after: false
