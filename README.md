@@ -36,6 +36,7 @@
 - [Supported Browsers](#supported-browsers)
 - [Issues](https://github.com/shgysk8zer0/konami/issues)
 - [Contributing](./.github/CONTRIBUTING.md)
+- [Changelog](./CHANGELOG.md)
 
 ### About
 `konami.js` enables developers to easily add the Konami Code to their websites.
