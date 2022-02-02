@@ -1,12 +1,13 @@
 {
   "name": "@shgysk8zer0/konami",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple JavaScript module for adding Konami Code Easter Eggs",
   "main": "konami.js",
   "type": "module",
   "engines": {
     "node": ">=15.3.0"
   },
+  "private": false,
   "scripts": {
     "test": "eslint .",
     "preversion": "npm test",
