@@ -69,6 +69,11 @@ npm i @shgysk8zer0/konami
 git submodule add https://github/com/shgysk8zer0/konami.git js/konami
 ```
 
+#### CDN (unpkg)
+```js
+const { konami } = await import('https://unpkg.com/@shgysk8zer0/konami');
+```
+
 ### Updating
 
 #### Git Submodule
