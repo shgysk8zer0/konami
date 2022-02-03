@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.5] 2022-02-02
+
+### Added
+- Add optional `delay`, defaulting to 1,000 ms
+
+### Changed:
+- Use Konami img from GH Pages
+
 ## [v1.0.4] 2022-02-02
 
 ### Added
