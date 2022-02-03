@@ -92,7 +92,7 @@ await konami({ target, delay, signal, capture });
 | `target`  | `EventTarget` | `globalThis`  | Target to listen for input on           |
 | `delay`   | `Number`      | `1000`        | Allowed delay in ms between inputs      |
 | `signal`  | `AbortSignal` | `undefined`   | See [`signal` on MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#parameters) |
-| `capture` | `Boolean`     | `true`        | See [`capture` on MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#parameters)|
+| `capture` | `Boolean`     | `true`        | See [`capture` on MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#parameters) |
 
 ### Example
 
