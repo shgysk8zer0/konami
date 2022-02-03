@@ -34,6 +34,7 @@
 - [Example](#example)
 - [Requirements](#requirements)
 - [Supported Browsers](#supported-browsers)
+- [@shgysk8zer0/konami on npm](https://www.npmjs.com/package/@shgysk8zer0/konami)
 - [Issues](https://github.com/shgysk8zer0/konami/issues)
 - [Contributing](./.github/CONTRIBUTING.md)
 - [Changelog](./CHANGELOG.md)
@@ -51,21 +52,41 @@ may be `await`ed
 - Allows specifying the `EventTarget` via the optional `{ target }`.
 
 ### Installation
+#### npm
+
+```bash
+npm i @shgysk8zer0/konami
+```
+
+#### Git Submodule
 ```bash
 git submodule add https://github/com/shgysk8zer0/konami.git js/konami
 ```
 
 ### Updating
+
+#### Git Submodule
 ```bash
 git submodule update --remote -- js/konami
 ```
 
 **Tip**: Use [Dependabot](https://github.com/dependabot) to automatically get
-Pull Requests when a submodule (like konami) is updated.
+Pull Requests when a submodule or package is updated.
 
 ### Example
+
+#### From Submodule
 ```js
 import { konami } from './konami.js';
+
+konami().then(/* Enter Cheat Mode! */);
+```
+
+#### From npm
+```js
+
+import { konami } from '@shgysk8zer0/konami';
+// or const { konami } = require('@shgysk8zer0/konami');
 
 konami().then(/* Enter Cheat Mode! */);
 ```
