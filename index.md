@@ -1,4 +1,6 @@
 # Konami Code JS module
+## `@shgysk8zer0/konami`
+<script type="module" src="./index.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ![Node CI](https://github.com/shgysk8zer0/konami/workflows/Node%20CI/badge.svg)
 <!-- ![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg) -->
 
@@ -14,7 +16,7 @@
 
 [![Donate using Liberapay](https://img.shields.io/liberapay/receives/shgysk8zer0.svg?logo=liberapay)](https://liberapay.com/shgysk8zer0/donate "Donate using Liberapay")
 
-![](https://static.wikia.nocookie.net/contra/images/4/49/Konami_Code_-_01.jpg/revision/latest/scale-to-width-down/300)
+![](./konami.webp)
 
 > The Konami Code (Japanese: コナミコマンド, Konami Komando, "Konami command"), also
 > commonly referred to as the Contra Code and sometimes the 30 Lives code,
@@ -37,8 +39,6 @@
 - [@shgysk8zer0/konami on npm](https://www.npmjs.com/package/@shgysk8zer0/konami)
 - [@shgysk8zer0/konami on unpkg](https://unpkg.com/browse/@shgysk8zer0/konami/)
 - [Issues](https://github.com/shgysk8zer0/konami/issues)
-- [Contributing](./.github/CONTRIBUTING.md)
-- [Changelog](./CHANGELOG.md)
 
 ### About
 `konami.js` enables developers to easily add the Konami Code to their websites.
