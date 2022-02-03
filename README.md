@@ -35,7 +35,7 @@
 ## Quick Links
 - [About](#about)
 - [Installation](#installation)
-- [Updating](#updating)
+- [Options](#options)
 - [Example](#example)
 - [Requirements](#requirements)
 - [Supported Browsers](#supported-browsers)
@@ -79,6 +79,20 @@ git submodule update --remote -- js/konami
 **Tip**: Use [Dependabot](https://github.com/dependabot) to automatically get
 Pull Requests when a submodule or package is updated.
 
+### Options
+
+```js
+import { konami } from '/js/konami.js';
+
+await konami({ target, delay, signal, capture });
+```
+| Name      | Type          | Default Value | Description                             |
+------------|---------------|---------------|-----------------------------------------
+| `target`  | `EventTarget` | `globalThis`  | Target to listen for input on           |
+| `delay`   | `Number`      | `1000`        | Allowed delay in ms between inputs      |
+| `signal`  | `AbortSignal` | `undefined`   | See [`signal` on MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#parameters) |
+| `capture` | `Boolean`     | `true`        | See [`capture` on MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#parameters)|
+
 ### Example
 
 #### From Submodule
@@ -102,8 +116,8 @@ konami().then(/* Enter Cheat Mode! */);
 #### From unpkg CDN
 ```js
 const controller = new AbortController();
-// This will use version 1.0.3
-const { konami } = await import('https://unpkg.com/@shgysk8zer0/konami@1.0.3/konami.js');
+// This will use version 1.0.5
+const { konami } = await import('https://unpkg.com/@shgysk8zer0/konami@1.0.5/konami.js');
 
 try {
   await konami({
