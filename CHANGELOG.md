@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add npm instructions to README
+- Add instructions for use on unpkg.com
 
 ## [1.0.3] - 2022-02-02
 

@@ -35,6 +35,7 @@
 - [Requirements](#requirements)
 - [Supported Browsers](#supported-browsers)
 - [@shgysk8zer0/konami on npm](https://www.npmjs.com/package/@shgysk8zer0/konami)
+- [@shgysk8zer0/konami on unpkg](https://unpkg.com/browse/@shgysk8zer0/konami/)
 - [Issues](https://github.com/shgysk8zer0/konami/issues)
 - [Contributing](./.github/CONTRIBUTING.md)
 - [Changelog](./CHANGELOG.md)
@@ -92,9 +93,12 @@ konami().then(/* Enter Cheat Mode! */);
 ```
 
 ### Advanced
+
+#### From unpkg CDN
 ```js
 const controller = new AbortController();
-const { konami } = await import('./konami.js');
+// This will use version 1.0.3
+const { konami } = await import('https://unpkg.com/@shgysk8zer0/konami@1.0.3/konami.js');
 
 try {
   await konami({
