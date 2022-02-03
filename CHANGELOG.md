@@ -6,8 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.6] 2022-02-02
+
 ### Added
 - npm badges
+- Table of options in README
 
 ## [v1.0.5] 2022-02-02
 
