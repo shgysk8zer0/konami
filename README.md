@@ -4,8 +4,13 @@
 
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/commits/master)
-[![GitHub release](https://img.shields.io/github/release/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/releases)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/shgysk8zer0)](https://github.com/sponsors/shgysk8zer0)
+[![GitHub release](https://img.shields.io/github/release/shgysk8zer0/konami?logo=github)](https://github.com/shgysk8zer0/konami/releases)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/shgysk8zer0?logo=github)](https://github.com/sponsors/shgysk8zer0)
+
+[![npm](https://img.shields.io/npm/v/@shgysk8zer0/konami)](https://www.npmjs.com/package/@shgysk8zer0/konami)
+![node-current](https://img.shields.io/node/v/@shgysk8zer0/konami)
+![npm bundle size gzipped](https://img.shields.io/bundlephobia/minzip/@shgysk8zer0/konami)
+[![npm](https://img.shields.io/npm/dw/@shgysk8zer0/konami?logo=npm)](https://www.npmjs.com/package/@shgysk8zer0/konami)
 
 [![GitHub followers](https://img.shields.io/github/followers/shgysk8zer0.svg?style=social)](https://github.com/shgysk8zer0)
 ![GitHub forks](https://img.shields.io/github/forks/shgysk8zer0/konami.svg?style=social)
