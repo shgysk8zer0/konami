@@ -1,6 +1,10 @@
 # Konami Code JS module
 ## `@shgysk8zer0/konami`
 <script type="module" src="./index.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+[![CodeQL](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml)
+![Node CI](https://github.com/shgysk8zer0/konami/workflows/Node%20CI/badge.svg)
+<!-- ![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg) -->
+
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/commits/master)
 [![GitHub release](https://img.shields.io/github/release/shgysk8zer0/konami?logo=github)](https://github.com/shgysk8zer0/konami/releases)
