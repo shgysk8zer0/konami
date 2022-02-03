@@ -86,6 +86,7 @@ import { konami } from '/js/konami.js';
 
 await konami({ target, delay, signal, capture });
 ```
+
 | Name      | Type          | Default Value | Description                             |
 ------------|---------------|---------------|-----------------------------------------
 | `target`  | `EventTarget` | `globalThis`  | Target to listen for input on           |
