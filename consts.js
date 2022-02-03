@@ -9,3 +9,9 @@ export const EVENT = 'keydown';
  * @type {Array}
  */
 export const CODE = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+/**
+ * Allowed input delay in ms
+ * @type {Number}
+ */
+export const DELAY = 1000;

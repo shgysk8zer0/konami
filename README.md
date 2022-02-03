@@ -14,7 +14,7 @@
 
 [![Donate using Liberapay](https://img.shields.io/liberapay/receives/shgysk8zer0.svg?logo=liberapay)](https://liberapay.com/shgysk8zer0/donate "Donate using Liberapay")
 
-![](https://static.wikia.nocookie.net/contra/images/4/49/Konami_Code_-_01.jpg/revision/latest/scale-to-width-down/300)
+![](https://shgysk8zer0.github.io/konami/konami.webp)
 
 > The Konami Code (Japanese: コナミコマンド, Konami Komando, "Konami command"), also
 > commonly referred to as the Contra Code and sometimes the 30 Lives code,
@@ -102,6 +102,7 @@ const { konami } = await import('https://unpkg.com/@shgysk8zer0/konami@1.0.3/kon
 
 try {
   await konami({
+    delay: 500,
     target: document.getElementById('konami-target'),
     signal: controller.signal,
     capture: true,
