@@ -55,6 +55,7 @@ may be `await`ed
 - Allows specifying the `EventTarget` via the optional `{ target }`.
 
 ### Installation
+
 #### npm
 
 ```bash
@@ -64,6 +65,11 @@ npm i @shgysk8zer0/konami
 #### Git Submodule
 ```bash
 git submodule add https://github/com/shgysk8zer0/konami.git js/konami
+```
+
+#### CDN (unpkg)
+```js
+const { konami } = await import('https://unpkg.com/@shgysk8zer0/konami');
 ```
 
 ### Updating
@@ -79,7 +85,7 @@ Pull Requests when a submodule or package is updated.
 ### Options
 
 ```js
-import { konami } from '/js/konami.js';
+import { konami } from '/js/konami/konami.js';
 
 await konami({ target, delay, signal, capture });
 ```
@@ -96,7 +102,7 @@ await konami({ target, delay, signal, capture });
 
 #### From Submodule
 ```js
-import { konami } from './konami.js';
+import { konami } from '/js/konami/konami.js';
 
 konami().then(/* Enter Cheat Mode! */);
 ```
@@ -112,7 +118,6 @@ konami().then(/* Enter Cheat Mode! */);
 
 ### Advanced
 
-#### From unpkg CDN
 ```js
 const controller = new AbortController();
 // This will use version 1.0.5
