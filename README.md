@@ -1,4 +1,5 @@
 # Konami Code JS module
+[![CodeQL](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml)
 ![Node CI](https://github.com/shgysk8zer0/konami/workflows/Node%20CI/badge.svg)
 <!-- ![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg) -->
 
