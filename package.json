@@ -25,6 +25,7 @@
   "keywords": [
     "konami",
     "konami-js",
+    "konami-code",
     "easter-egg"
   ],
   "author": "Chris Zuber <admin@kernvalley.us>",
@@ -32,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/shgysk8zer0/konami/issues"
   },
-  "homepage": "https://github.com/shgysk8zer0/konami#readme",
+  "homepage": "https://shgysk8zer0.github.io/konami/",
   "devDependencies": {
     "eslint": "^8.8.0"
   },
