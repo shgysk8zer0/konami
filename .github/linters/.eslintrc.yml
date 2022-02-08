@@ -49,8 +49,8 @@ rules:
     - 2
     - always
   no-console: 0
-  async-await/space-after-async: 2
-  async-await/space-after-await: 2
+  # async-await/space-after-async: 2
+  # async-await/space-after-await: 2
   generator-star-spacing:
   - error
   - before: false
