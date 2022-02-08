@@ -1,14 +1,14 @@
 ---
-#################################
-#################################
-## Super Linter GitHub Actions ##
-#################################
-#################################
+###########################
+###########################
+## Linter GitHub Actions ##
+###########################
+###########################
 name: Lint Code Base
 
 #
 # Documentation:
-# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions
 #
 
 #############################
@@ -16,10 +16,13 @@ name: Lint Code Base
 #############################
 on:
   push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
+    branches:
+      - 'master'
+      - release/*
   pull_request:
-    branches: [master, main]
+    branches:
+      - master
+      - release/*
 
 ###############
 # Set the Job #
@@ -40,16 +43,36 @@ jobs:
       ##########################
       - name: Checkout Code
         uses: actions/checkout@v2
-        with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
-          fetch-depth: 0
 
       ################################
       # Run Linter against code base #
       ################################
       - name: Lint Code Base
-        uses: github/super-linter/slim@v4
+        uses: docker://github/super-linter:v4
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_YAML: true
+          VALIDATE_JSON: true
+          # VALIDATE_XML: true
+          VALIDATE_MD: true
+          # VALIDATE_HTML: true
+          # VALIDATE_BASH: true
+          # VALIDATE_PERL: true
+          # VALIDATE_PHP_BUILTIN: true
+          # VALIDATE_PYTHON: true
+          # VALIDATE_RUBY: true
+          # VALIDATE_COFFEE: true
+          # VALIDATE_ANSIBLE: true
+          # VALIDATE_JAVASCRIPT_ES: true
+          # VALIDATE_JAVASCRIPT_STANDARD: true
+          # VALIDATE_TYPESCRIPT_ES: true
+          # VALIDATE_TYPESCRIPT_STANDARD: true
+          # VALIDATE_DOCKER: true
+          # VALIDATE_GO: true
+          # VALIDATE_TERRAFORM: true
+          # VALIDATE_CSS: true
+          # ANSIBLE_DIRECTORY:
+          # ACTIONS_RUNNER_DEBUG: true
+          # DEFAULT_WORKSPACE:
