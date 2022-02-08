@@ -3,7 +3,7 @@
 <script type="module" src="./index.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 [![CodeQL](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml)
 ![Node CI](https://github.com/shgysk8zer0/konami/workflows/Node%20CI/badge.svg)
-<!-- ![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg) -->
+![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg)
 
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/commits/master)
@@ -68,7 +68,7 @@ npm i @shgysk8zer0/konami
 
 #### Git Submodule
 ```bash
-git submodule add https://github/com/shgysk8zer0/konami.git js/konami
+git submodule add https://github.com/shgysk8zer0/konami.git js/konami
 ```
 
 #### CDN (unpkg)
