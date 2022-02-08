@@ -18,11 +18,11 @@ env:
 # Global Vars #
 ###############
 globals:
-  URLSearchParams: false
-  ga: false
-  skipWaiting: false
-  clients: false
-  PasswordCredential: false
+  URLSearchParams: readonly
+  ga: readonly
+  skipWaiting: readonly
+  clients: readonly
+  PasswordCredential: readonly
 
 ###############
 # Parser vars #
@@ -35,8 +35,8 @@ parserOptions:
 ###########
 # Plugins #
 ###########
-plugins:
-  - async-await
+# plugins:
+#   - async-await
 
 #########
 # Rules #
