@@ -1,7 +1,7 @@
 # Konami Code JS module
 [![CodeQL](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/shgysk8zer0/konami/actions/workflows/codeql-analysis.yml)
 ![Node CI](https://github.com/shgysk8zer0/konami/workflows/Node%20CI/badge.svg)
-<!-- ![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg) -->
+![Lint Code Base](https://github.com/shgysk8zer0/konami/workflows/Lint%20Code%20Base/badge.svg)
 
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/shgysk8zer0/konami.svg)](https://github.com/shgysk8zer0/konami/commits/master)
@@ -67,7 +67,7 @@ npm i @shgysk8zer0/konami
 
 #### Git Submodule
 ```bash
-git submodule add https://github/com/shgysk8zer0/konami.git js/konami
+git submodule add https://github.com/shgysk8zer0/konami.git js/konami
 ```
 
 #### CDN (unpkg)
@@ -88,7 +88,7 @@ Pull Requests when a submodule or package is updated.
 ### Options
 
 ```js
-import { konami } from '/js/konami.js';
+import { konami } from '/js/konami/konami.js';
 
 await konami({ target, delay, signal, capture });
 ```
@@ -104,7 +104,7 @@ await konami({ target, delay, signal, capture });
 
 #### From Submodule
 ```js
-import { konami } from './konami.js';
+import { konami } from '/js/konami/konami.js';
 
 konami().then(/* Enter Cheat Mode! */);
 ```

@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.8] - 2022-02-08
+
+### Added
+- Re-add SuperLinter using "slim" version
+- Uncomment Super Linter badge in README
+
+### Fixed
+- Fix typo in Git subomdule URL
+- Use file path consistently for `import` statements
+
 ## [v1.0.7] 2022-02-02
 
 ### Added

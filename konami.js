@@ -45,6 +45,9 @@ export async function konami({ signal, capture = true, delay = DELAY, target = g
 						clearTimeout(timeout);
 					}
 
+					/*
+					 * Do not set timeout if NaN or infinite
+					 */
 					if (Number.isFinite(delay)) {
 						timeout = setTimeout(() => n = 0, delay);
 					}

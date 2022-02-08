@@ -1,12 +1,9 @@
 ---
----
 #############################
 #############################
 ## JavaScript Linter rules ##
 #############################
 #############################
-
-extends: eslint:recommended
 
 ############
 # Env Vars #
@@ -14,47 +11,46 @@ extends: eslint:recommended
 env:
   browser: true
   es6: true
+  jest: true
 
 ###############
 # Global Vars #
 ###############
 globals:
-  URLSearchParams: false
-  ga: false
-  skipWaiting: false
-  clients: false
-  PasswordCredential: false
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+  ga: readonly
 
 ###############
 # Parser vars #
 ###############
-parser: babel-eslint
+parser: '@typescript-eslint/parser'
 parserOptions:
-  sourceType: module
   ecmaVersion: 2018
+  sourceType: module
 
 ###########
 # Plugins #
 ###########
 plugins:
-  - async-await
+  - '@typescript-eslint'
 
 #########
 # Rules #
 #########
 rules:
   indent:
-  - 2
-  - tab
+    - 2
+    - tab
   quotes:
-  - 2
-  - single
+    - 2
+    - single
   semi:
-  - 2
-  - always
+    - 2
+    - always
   no-console: 0
-  async-await/space-after-async: 2
-  async-await/space-after-await: 2
+  # async-await/space-after-async: 2
+  # async-await/space-after-await: 2
   generator-star-spacing:
   - error
   - before: false
@@ -63,3 +59,35 @@ rules:
     method:
       before: true
       after: false
+
+##############################
+# Overrides for JSON parsing #
+##############################
+overrides:
+
+  # JSON files
+  - files:
+      - "*.json"
+    extends:
+      - plugin:jsonc/recommended-with-json
+    parser: jsonc-eslint-parser
+    parserOptions:
+      jsonSyntax: JSON
+
+  # JSONC files
+  - files:
+      - "*.jsonc"
+    extends:
+      - plugin:jsonc/recommended-with-jsonc
+    parser: jsonc-eslint-parser
+    parserOptions:
+      jsonSyntax: JSONC
+
+  # JSON5 files
+  - files:
+      - "*.json5"
+    extends:
+      - plugin:jsonc/recommended-with-json5
+    parser: jsonc-eslint-parser
+    parserOptions:
+      jsonSyntax: JSON5
