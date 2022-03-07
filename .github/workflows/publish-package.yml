@@ -8,7 +8,7 @@ jobs:
   npm-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 14
@@ -22,7 +22,7 @@ jobs:
   #   runs-on: ubuntu-latest
   #   needs: npm-test
   #   steps:
-  #     - uses: actions/checkout@v2.4.0
+  #     - uses: actions/checkout@v3
   #     - uses: actions/setup-node@v3
         # Setup .npmrc file to publish to GitHub
   #       with:
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: npm-test
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
         node-version: 14
