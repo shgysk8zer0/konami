@@ -14,7 +14,7 @@
     "version:bump": "npm run version:bump:patch",
     "version:bump:patch": "npm version --no-git-tag-version patch",
     "version:bump:minor": "npm version --no-git-tag-version minor",
-    "version:bump:major": "npm version --no-git-tag-version patch",
+    "version:bump:major": "npm version --no-git-tag-version major",
     "fix:js": "eslint --fix .",
     "fix": "npm run fix:js"
   },
