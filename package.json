@@ -1,6 +1,6 @@
 {
   "name": "@shgysk8zer0/konami",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple JavaScript module for adding Konami Code Easter Eggs",
   "main": "konami.js",
   "type": "module",
@@ -14,7 +14,7 @@
     "version:bump": "npm run version:bump:patch",
     "version:bump:patch": "npm version --no-git-tag-version patch",
     "version:bump:minor": "npm version --no-git-tag-version minor",
-    "version:bump:major": "npm version --no-git-tag-version patch",
+    "version:bump:major": "npm version --no-git-tag-version major",
     "fix:js": "eslint --fix .",
     "fix": "npm run fix:js"
   },
