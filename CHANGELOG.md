@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.9] - 2023-03-22
+
+### Changed
+- Update to node v18.13.0
+
+### Removed
+- No more `consts.js` or `funcs.js`... Just one script
+
 ## [v1.0.8] - 2022-02-08
 
 ### Added

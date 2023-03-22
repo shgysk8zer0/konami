@@ -1,5 +1,20 @@
-import { EVENT, CODE, DELAY } from './consts.js';
-import { isSignal, isAborted } from './funcs.js';
+/**
+ * Event to listen for
+ * @type {String}
+ */
+const EVENT = 'keydown';
+
+/**
+ * [↑, ↑, ↓, ↓, ←, →, ←, →, B, A] (Konami Code)
+ * @type {Array}
+ */
+const CODE = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+/**
+ * Allowed input delay in ms
+ * @type {Number}
+ */
+const DELAY = 1000;
 
 /**
  * `await` the Konami Code being entered
@@ -19,7 +34,7 @@ export async function konami({ signal, capture = true, delay = DELAY, target = g
 			reject(new TypeError('target must be an instance of `EventTarget`'));
 		} else if ((! (typeof delay === 'number') && (! Number.isNaN(delay)) || delay < 100)) {
 			throw new TypeError('Delay must be an integer >= 100');
-		} else if (isAborted(signal)) {
+		} else if (signal instanceof AbortSignal && signal.aborted) {
 			reject(signal.reason || new DOMException('Operation aborted'));
 		} else {
 			let n = 0;
@@ -27,24 +42,16 @@ export async function konami({ signal, capture = true, delay = DELAY, target = g
 			let timeout = NaN;
 
 			target.addEventListener(EVENT, ({ keyCode }) => {
+				if (Number.isInteger(timeout)) {
+					clearTimeout(timeout);
+				}
+
 				if (keyCode !== CODE[n++]) {
 					n = 0;
-
-					if (Number.isInteger(timeout)) {
-						clearTimeout(timeout);
-					}
 				} else if (n === CODE.length) {
 					resolve();
 					controller.abort();
-
-					if (Number.isInteger(timeout)) {
-						clearTimeout(timeout);
-					}
 				} else {
-					if (Number.isInteger(timeout)) {
-						clearTimeout(timeout);
-					}
-
 					/*
 					 * Do not set timeout if NaN or infinite
 					 */
@@ -54,10 +61,10 @@ export async function konami({ signal, capture = true, delay = DELAY, target = g
 				}
 			}, { signal: controller.signal, passive: true, capture });
 
-			if (isSignal(signal)) {
-				signal.addEventListener('abort', ({ target: { reason }}) => {
-					reject(reason || new DOMException('Operation aborted'));
-					controller.abort(reason);
+			if (signal instanceof AbortSignal) {
+				signal.addEventListener('abort', ({ target }) => {
+					reject(target.reason || new DOMException('Operation aborted'));
+					controller.abort(target.reason);
 				}, { once: true, signal: controller.signal });
 			}
 		}
