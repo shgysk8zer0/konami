@@ -1,4 +1,5 @@
 *.sql
+*.cjs
 /img/icons.svg
 *.min.*
 *.map
