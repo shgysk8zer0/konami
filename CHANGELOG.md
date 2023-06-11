@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.10] - 2023-06-11
+
+### Added
+- `@shgysk8zer0/js-utils` and a CommonJS bundle for `require()`
+
+### Removed
+- `eslint`
+
 ### Fixed
 - Update GitHub Release Action with correct permissions
 
