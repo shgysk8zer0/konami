@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.1.0] - 20023-07-03
+
+### Changed
+- Update to node 20
+- Update GH Action to publish to npm
+- Update npm scripts for versioning and lockss
+
 ## [v1.0.10] - 2023-06-11
 
 ### Added
