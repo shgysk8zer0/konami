@@ -1,9 +1,10 @@
 {
   "name": "@shgysk8zer0/konami",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "description": "A simple JavaScript module for adding Konami Code Easter Eggs",
-  "main": "konami.cjs",
-  "module": "konami.js",
+  "main": "./konami.cjs",
+  "module": "./konami.js",
+  "unpkg": "./konami.js",
   "private": false,
   "type": "module",
   "engines": {
@@ -21,12 +22,13 @@
     "prepare": "npm run build",
     "build": "npm run build:js",
     "build:js": "rollup -c rollup.config.js",
-    "version:bump": "npm run version:bump:patch",
-    "version:bump:patch": "npm version --no-git-tag-version patch",
-    "version:bump:minor": "npm version --no-git-tag-version minor",
-    "version:bump:major": "npm version --no-git-tag-version major",
     "fix:js": "eslint --fix .",
-    "fix": "npm run fix:js"
+    "fix": "npm run fix:js",
+    "create:lock": "npm i --package-lock-only --ignore-scripts --no-audit --no-fund",
+    "version:bump:minor": "npm version --no-git-tag-version minor && npm run create:lock",
+    "version:bump": "npm run version:bump:patch",
+    "version:bump:patch": "npm version --no-git-tag-version patch && npm run create:lock",
+    "version:bump:major": "npm version --no-git-tag-version major && npm run create:lock"
   },
   "repository": {
     "type": "git",
@@ -40,11 +42,21 @@
   ],
   "author": "Chris Zuber <admin@kernvalley.us>",
   "license": "MIT",
+  "funding": [
+    {
+      "type": "librepay",
+      "url": "https://liberapay.com/shgysk8zer0"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/shgysk8zer0"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/shgysk8zer0/konami/issues"
   },
   "homepage": "https://shgysk8zer0.github.io/konami/",
   "devDependencies": {
-    "@shgysk8zer0/js-utils": "^1.0.0"
+    "@shgysk8zer0/js-utils": "^1.0.1"
   }
 }
