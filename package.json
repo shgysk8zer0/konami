@@ -1,7 +1,13 @@
 {
   "name": "@shgysk8zer0/konami",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple JavaScript module for adding Konami Code Easter Eggs",
+  "keywords": [
+    "konami",
+    "konami-js",
+    "konami-code",
+    "easter-egg"
+  ],
   "main": "./konami.cjs",
   "module": "./konami.js",
   "unpkg": "./konami.js",
@@ -14,32 +20,33 @@
     ".": {
       "import": "./konami.js",
       "require": "./konami.cjs"
+    },
+    "./*.js": {
+      "import": "./*.js"
+    },
+    "./*.mjs": {
+      "import": "./*.js"
     }
   },
   "scripts": {
-    "test": "eslint .",
+    "test": "npm run lint:js",
     "preversion": "npm test",
     "prepare": "npm run build",
     "build": "npm run build:js",
     "build:js": "rollup -c rollup.config.js",
+    "lint:js": "eslint .",
     "fix:js": "eslint --fix .",
     "fix": "npm run fix:js",
     "create:lock": "npm i --package-lock-only --ignore-scripts --no-audit --no-fund",
-    "version:bump:minor": "npm version --no-git-tag-version minor && npm run create:lock",
     "version:bump": "npm run version:bump:patch",
     "version:bump:patch": "npm version --no-git-tag-version patch && npm run create:lock",
+    "version:bump:minor": "npm version --no-git-tag-version minor && npm run create:lock",
     "version:bump:major": "npm version --no-git-tag-version major && npm run create:lock"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shgysk8zer0/konami.git"
   },
-  "keywords": [
-    "konami",
-    "konami-js",
-    "konami-code",
-    "easter-egg"
-  ],
   "author": "Chris Zuber <admin@kernvalley.us>",
   "license": "MIT",
   "funding": [
