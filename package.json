@@ -64,6 +64,7 @@
   },
   "homepage": "https://shgysk8zer0.github.io/konami/",
   "devDependencies": {
+    "@shgysk8zer0/eslint-config": "^1.0.1",
     "@shgysk8zer0/js-utils": "^1.0.1"
   }
 }
