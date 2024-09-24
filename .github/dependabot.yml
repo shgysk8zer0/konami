@@ -1,23 +1,27 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/"
+    directory: /
     schedule:
       interval: weekly
-      time: "13:00"
+      day: thursday
+      time: '08:00'
+      timezone: America/Los_Angeles
     open-pull-requests-limit: 10
     reviewers:
       - shgysk8zer0
     assignees:
-     - shgysk8zer0
+      - shgysk8zer0
     labels:
       - dependencies
       - javascript
   - package-ecosystem: github-actions
-    directory: "/"
+    directory: /
     schedule:
       interval: weekly
-      time: "13:00"
+      day: thursday
+      time: '08:00'
+      timezone: America/Los_Angeles
     open-pull-requests-limit: 10
     reviewers:
       - shgysk8zer0
